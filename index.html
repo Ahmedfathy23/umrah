@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Umrah Cruise Trip — Oria Cruise</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay container">
+      <h1><i class="fa-solid fa-ship"></i> Oria Cruise — Umrah Cruise Trip</h1>
+      <p class="lead">Join us for a peaceful Umrah experience with comfortable stays, guided visits, and seamless transfers — September 2025</p>
+      <a class="cta" id="requestQuoteBtn" href="#booking"><i class="fa-solid fa-ticket"></i> Prices</a>
+    </div>
+</header>
+
+  <main class="container">
+    <section class="gallery card">
+      <h2><i class="fa-solid fa-images"></i> Trip Photos</h2>
+      <div class="gallery-grid">
+        <img src="images/mecca.jpg" alt="Mecca hotel">
+        <img src="images/medina.jpg" alt="Medina">
+        <img src="images/redsea.jpg" alt="Red Sea">
+        <img src="images/cruise.avif" alt="Cruise">
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2><i class="fa-solid fa-calendar-days"></i> Daily Program</h2>
+        <div class="itinerary">
+          <ul>
+            <li>
+              <div class="date">2025-09-20</div>
+              <div>
+                <strong>Arrival in Mecca — Four Points Hotel</strong>
+                <div class="muted">Check-in: 2025-09-20</div>
+              </div>
+            </li>
+            <li>
+              <div class="date">2025-09-22</div>
+              <div>
+                <strong>Transfer to Medina — Taiba Front Hotel</strong>
+                <div class="muted">From Sep 22 to Sep 23</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="mt-18"><i class="fa-solid fa-suitcase-rolling"></i> What's Included</h2>
+        <ul>
+          <li>Hotel stays near the Haram</li>
+          <li>Comfortable transfers between Mecca and Medina</li>
+          <li>Guides and organized schedules</li>
+        </ul>
+
+  <a class="cta" id="contactBtn" href="#">Contacts</a>
+        
+      </section>
+
+      <aside class="card">
+        <h3><i class="fa-solid fa-phone"></i> Contact & Booking</h3>
+        <div class="contact">
+          <form id="bookingForm" enctype="multipart/form-data">
+            <label>Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Your full name" required />
+            <label>Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="+1 555..." required />
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="name@example.com" />
+            <label>Expected Arrival</label>
+            <input type="date" name="arrival" id="arrival" />
+            <label>Notes</label>
+            <textarea name="notes" id="notes" rows="4" placeholder="Any special requests"></textarea>
+            <label>Payment Receipt (jpg, png, pdf)</label>
+            <input type="file" name="receipt" id="receipt" accept=".jpg,.jpeg,.png,.pdf" />
+
+            <button type="submit" class="cta full">Submit Booking</button>
+            <div id="formMessage" class="muted" aria-live="polite" style="margin-top:8px"></div>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Price Modal -->
+  <div id="priceModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="priceModalTitle">
+      <button class="close" aria-label="Close">&times;</button>
+      <h2 id="priceModalTitle">Package Prices</h2>
+      <table class="price-table">
+        <thead>
+          <tr><th>Room Type</th><th>Price per Person (USD)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Triple Room</td><td>$1,300</td></tr>
+          <tr><td>Double Room</td><td>$1,400</td></tr>
+        </tbody>
+      </table>
+      <button id="continueBooking" class="cta full" style="margin-top:16px;">Continue to Booking</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Oria Cruise — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal" aria-hidden="true" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+  <div style="background:#fff; padding:20px; border-radius:8px; max-width:300px; text-align:center; position:relative;">
+    <button id="closeContactModal" style="position:absolute; top:5px; right:8px; background:none; border:none; font-size:18px; cursor:pointer;">&times;</button>
+    <h2>Contact Us</h2>
+    <p><strong>Phone 1:</strong> +1 555-123-4567</p>
+    <p><strong>Phone 2:</strong> +1 555-987-6543</p>
+  </div>
+</div>
+
+</body>
+</html>
